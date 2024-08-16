@@ -1,0 +1,24 @@
+#transactionType{
+    margin-left: 10px;
+    background-color: #eee;
+}
+
+#datelabel {
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.timage {
+    background-color: #eee;
+}
+
+.imageContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form h1{
+    margin-bottom: 20px;
+}

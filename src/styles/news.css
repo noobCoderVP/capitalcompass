@@ -1,0 +1,60 @@
+.container {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .newsGrid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    max-width: 345px;
+    background-color: #000; /* Black background for the card */
+    color: white; /* White text */
+  }
+  
+  .cardMedia {
+    height: 100px; /* Decreased the height */
+    width: 100%; /* Ensures the image covers the full width of the card */
+    object-fit: cover; /* Maintains aspect ratio without distortion */
+    filter: grayscale(100%); /* Convert image to black and white */
+  }
+  
+  .cardContent {
+    padding: 16px;
+  }
+  
+  .cardActions {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .buttonPrimary {
+    background-color: black; /* Black background for the button */
+    color: white; /* White text */
+    text-transform: none;
+    border: 1px solid white; /* White border */
+  }
+  
+  .buttonPrimary:hover {
+    background-color: #333; /* Slightly lighter black on hover */
+  }
+  
+  .buttonSecondary {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    text-transform: none;
+    border: 1px solid black; /* Black border */
+  }
+  
+  .buttonSecondary:hover {
+    background-color: #f0f0f0; /* Slightly darker white on hover */
+    color: black; /* Keep black text */
+  }
+  

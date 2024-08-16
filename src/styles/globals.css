@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+::-webkit-scrollbar {  
+    width: 12px; /* width for vertical scrollbar */  
+    height: 12px; /* height for horizontal scrollbar */  
+}  
+
+/* Scrollbar track */  
+::-webkit-scrollbar-track {  
+    background: #f1f1f1; /* Color of the scrollbar track */  
+}  
+
+/* Scrollbar handle */  
+::-webkit-scrollbar-thumb {  
+    background: #212121; /* Color of the scrollbar handle */  
+    border-radius: 10px; /* Rounded corners for the handle */  
+}  
+
+/* Scrollbar handle on hover */  
+::-webkit-scrollbar-thumb:hover {  
+    background: #000000; /* Color of the handle when hovered over */  
+}  
+
+.layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    width: 400px;
+    padding: 10px;
+    height: 100dvh;
+    overflow-y: auto;
+    flex-grow: 1;
+    background-color: antiquewhite;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 4px;
+    background-color: rgb(32, 32, 32);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 100dvh;
+}
+
+.logo {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.4em;
+    text-decoration: underline solid white 2px;
+    text-underline-offset: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.navBar {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    padding: 10px;
+}
+
+.navLink {
+    width: 90%;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 10px;
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navLink:hover {
+    background-color: rgb(81, 81, 81);
+}
+
+.loginLink:hover {
+    background-color: whitesmoke;
+}
+
+.loginLink, .registerLink {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    margin-top: auto;
+}
+

@@ -1,0 +1,85 @@
+.portfolio_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 50px;
+}
+
+.portfolio_header > form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.portfolio_header > form input {
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 4px 10px;
+    width: 300px;
+}
+
+.portfolio_header > form input:focus {
+    outline: none;
+}
+
+.portfolio_header h1 {
+    font-size: 1.3em;
+    text-decoration: underline 2px solid black;
+}
+
+.portfolio_header button {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    gap: 15px;
+    padding: 10px 0px;
+}
+
+.card .cardinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardinfo p {
+    font-size: small;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.card button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+}
+
+.card a{
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+}
